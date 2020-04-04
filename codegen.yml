@@ -1,0 +1,16 @@
+overwrite: true
+schema: schema.json
+documents:
+  - ./src/**/*.{ts,tsx}
+  - ./node_modules/gatsby-*/**/*.js
+config:
+  namingConvention:
+    enumValues: keep
+generates:
+  ./src/graphqlTypes.ts:
+    hooks:
+      afterOneFileWrite:
+        - prettier --write
+    plugins:
+      - typescript
+      - typescript-operations

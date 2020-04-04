@@ -1,0 +1,63 @@
+{
+  "name": "gatsby-starter-default-typescript",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Andy Kenward <hello@andykenward.com>",
+  "dependencies": {
+    "@babel/core": "7.6.4",
+    "gatsby": "2.15.36",
+    "gatsby-image": "2.2.29",
+    "gatsby-plugin-extract-schema": "0.0.5",
+    "gatsby-plugin-manifest": "2.2.23",
+    "gatsby-plugin-offline": "3.0.16",
+    "gatsby-plugin-react-helmet": "3.1.13",
+    "gatsby-plugin-sharp": "2.2.32",
+    "gatsby-plugin-typescript": "2.1.15",
+    "gatsby-source-filesystem": "2.1.33",
+    "gatsby-transformer-sharp": "2.2.23",
+    "graphql": "14.5.8",
+    "prop-types": "15.7.2",
+    "react": "16.10.2",
+    "react-dom": "16.10.2",
+    "react-helmet": "5.2.1",
+    "ts-optchain": "0.1.8"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "1.8.2",
+    "@graphql-codegen/typescript": "1.8.2",
+    "@graphql-codegen/typescript-operations": "1.8.2",
+    "@types/node": "12.7.12",
+    "@types/react": "16.9.9",
+    "@types/react-dom": "16.9.2",
+    "@types/react-helmet": "5.0.12",
+    "prettier": "1.18.2",
+    "typescript": "3.6.4"
+  },
+  "keywords": [
+    "gatsby",
+    "typescript"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "npm run type-check",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css}'",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "codegen": "graphql-codegen",
+    "codegen:watch": "graphql-codegen --watch",
+    "postinstall": "gatsby clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andykenward/gatsby-starter-default-typescript"
+  },
+  "bugs": {
+    "url": "https://github.com/andykenward/gatsby-starter-default-typescript/issues"
+  }
+}
