@@ -17,7 +17,7 @@ const transactionsData = require('./data/transactions/chequing.json');
  * switch the DEMO flag to false and add a valid CIBC auth token to
  * localstorage in your browser with the key 'x-auth-token'.
  */
-const DEMO = false;
+const DEMO = true;
 
 class BankAPI extends RESTDataSource {
   constructor() {

@@ -1,7 +1,11 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
+import React from 'react';
+import { ApolloProvider } from 'react-apollo';
+import ApolloClient from 'apollo-boost';
 
-// You can delete this file if you're not using it
+const client = new ApolloClient({
+  uri: 'http://localhost:8888/.netlify/functions/graphql',
+});
+
+export const wrapRootElement = ({ element }) => (
+  <ApolloProvider client={client}>{element}</ApolloProvider>
+);

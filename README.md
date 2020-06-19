@@ -42,3 +42,21 @@ Then in the CREAM app:
 Your auth token should now be set. Refresh the page to see your live account data.
 
 *NOTE: in the `functions/graphql.js` file you must set `const DEMO = false;` for live data to be used.
+
+## FAQ
+
+**Why are you using Gatsby for this and not Next.js?**
+
+I used Gatsby just for the ease of adding plugins and greater familiarity with the setup process. It's not ideal for SSR though because Gatsby can only server render data at build time which is not ideal for an app that is mostly dynamic. If I were building a production-ready version of this I'd be using Next.js for sure.
+
+**What's next for this?**
+
+I want to build out some charts using [React Vis](https://uber.github.io/react-vis/). I think it's a great library for data vis in React and I want to get more practice with it.
+
+**Ugh... why TypeScript?**
+
+TypeScript is great! I've quickly become one of those annoying TS people who won't shut up about it.
+
+**...But you're using JavaScript for the serverless funtions.**
+
+Yeah... Netlify serverless functions required a bit more effort than I was willing to spend to get TypeScript working. It is possible, but I was lazy and seemed like a hassle.

@@ -12,6 +12,8 @@
     "@danbruegge/gatsby-plugin-stylelint": "^4.1.0",
     "@material-ui/core": "^4.9.9",
     "@material-ui/icons": "^4.9.1",
+    "@types/babel__core": "^7.1.8",
+    "@types/babel__traverse": "^7.0.12",
     "babel-preset-gatsby": "^0.3.1",
     "framer-motion": "^1.10.3",
     "gatsby": "2.15.36",
