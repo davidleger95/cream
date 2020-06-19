@@ -5,7 +5,10 @@ const client = new ApolloClient({
   link: new HttpLink({
     uri: 'http://localhost:8888/.netlify/functions/graphql',
     headers: {
-      authorization: localStorage.getItem('authToken') || '',
+      authorization:
+        typeof window !== 'undefined'
+          ? localStorage.getItem('authToken') || ''
+          : '',
     },
   }),
 });

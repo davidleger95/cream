@@ -4,29 +4,25 @@ CREAM is a banking app that displays online banking information from CIBC accoun
 
 This is very much a work in progress at the moment, but enjoy! :)
 
-## [View Demo](#a)
-
-***
+---
 
 ## Dev
 
 Install dependencies via npm.
 
-  ```sh
-  npm install
-  ```
+```sh
+npm install
+```
 
-Run Netlify locally. (This is needed for the serverless functions.)
+Run Netlify Dev locally. (This is needed for the serverless functions to work properly.)
 
-  ```sh
-  netlify dev
-  ```
+```sh
+netlify dev
+```
 
 Go to `localhost:3000` in your browser.
 
 ## Demo vs. Live Data
-
-> NOTE: Live data will not work in production for liabilitiy reasons. Use live data at your own risk and on your own computer.
 
 This app is sert up to use demo data by default. To use live data, add a valid CIBC auth token to the app. To set a valid auth token:
 
@@ -41,7 +37,7 @@ Then in the CREAM app:
 
 Your auth token should now be set. Refresh the page to see your live account data.
 
-*NOTE: in the `functions/graphql.js` file you must set `const DEMO = false;` for live data to be used.
+\*NOTE: in the `functions/graphql.js` file you must set `const DEMO = false;` for live data to be used.
 
 ## FAQ
 
