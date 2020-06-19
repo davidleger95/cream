@@ -1,20 +1,41 @@
-import { Link } from "gatsby"
-import React from "react"
-import Image from "../components/image"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import React from 'react';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import HistoryIcon from '@material-ui/icons/History';
+import AccountsOverview from '../components/AccountsOverview';
+import ServiceSummary from '../components/ServiceSummary';
+import RecentActivity from '../components/RecentActivity';
+import Footer from '../components/Footer';
+import { styled } from 'linaria/react';
 
-const IndexPage: React.FC = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+const Sticky = styled.div`
+  position: sticky;
+  top: 1rem;
+  display: inherit;
+  gap: inherit;
+  align-self: start;
+`;
 
-export default IndexPage
+const IndexPage: React.FC = () => {
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <main>
+        <AccountsOverview />
+        <h2>
+          <HistoryIcon />
+          &nbsp;Recent Activity
+        </h2>
+        <RecentActivity />
+      </main>
+      <aside>
+        <Sticky>
+          <ServiceSummary />
+          <Footer />
+        </Sticky>
+      </aside>
+    </Layout>
+  );
+};
+
+export default IndexPage;

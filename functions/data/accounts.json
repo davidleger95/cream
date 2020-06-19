@@ -1,0 +1,280 @@
+{
+  "meta": {
+    "forexRates": [],
+    "categories": [
+      {
+        "id": "DEPOSIT",
+        "balanceTotal": {
+          "currency": "CAD",
+          "amount": 12345.67,
+          "cadAmount": 12345.67
+        },
+        "excludedFromTotal": null
+      },
+      {
+        "id": "NON_REGISTERED_INVESTMENT",
+        "balanceTotal": null,
+        "excludedFromTotal": null
+      },
+      {
+        "id": "REGISTERED_INVESTMENT",
+        "balanceTotal": {
+          "currency": "CAD",
+          "amount": 56789.1,
+          "cadAmount": 56789.1
+        },
+        "excludedFromTotal": null
+      },
+      {
+        "id": "CREDIT",
+        "balanceTotal": {
+          "currency": "CAD",
+          "amount": 0,
+          "cadAmount": 0
+        },
+        "excludedFromTotal": ["CC_AUTHORIZED"]
+      }
+    ]
+  },
+  "accounts": [
+    {
+      "id": "1234",
+      "number": "1234567",
+      "nickname": "Chequing",
+      "capabilities": [
+        "RENAMEABLE",
+        "TRANSFER_FROM_USD",
+        "REORDER_CHEQUE_SOURCE",
+        "FEED_SAVINGS_GOAL",
+        "REPRINT_STATEMENT_CHARGE_SOURCE",
+        "STOP_PAYMENTS",
+        "EMT_TO",
+        "TRANSFER_FROM",
+        "RDC",
+        "PAY_BILL",
+        "PAYUSDVISA_FROM_ASR",
+        "PAY_TAX_FROM",
+        "TRANSFER_TO",
+        "DOWNLOAD_TRANSACTIONS",
+        "EMT_STOP",
+        "MONEY_ORDER_SOURCE",
+        "UPDATE_STATEMENT_PREFERENCE",
+        "VIEW_BILLABLE_TRANSACTIONS",
+        "REPRINT_STATEMENT_MONTHLY",
+        "ALP_FROM_ASR",
+        "SERVICE_CHARGE_BREAKDOWN",
+        "EMT_RECLAIM",
+        "DIRECT_DEPOSIT",
+        "VIEW_VOID_CHEQUE",
+        "COPS_ASR",
+        "CONTRIBUTE_TO_RRSP_DISA",
+        "CMP_FROM_ASR",
+        "CONTRIBUTE_TO_TFSA_TASA",
+        "TFSA_TO_ASR",
+        "SHOW_ACCOUNT_DETAILS",
+        "MPP_FROM_ASR",
+        "SAVINGS_GOAL",
+        "AUTO_BILL_PAY",
+        "VIEW_TRANSACTIONS_MONTHLY",
+        "TRANSFER_TO_USD",
+        "EMT_FROM",
+        "COAB_SERVICEFEE_ACCOUNT_ASR"
+      ],
+      "_type": "InternalAccountV2",
+      "categorization": {
+        "category": "DEPOSIT",
+        "subCategory": "CHEQUING",
+        "extraSubCategory": null,
+        "instance": "XXXXX",
+        "holding": "XXXXX",
+        "taxPlan": "NON_REGISTERED",
+        "domicile": "XXXXX"
+      },
+      "availableFunds": 1234.92,
+      "balance": 100.0,
+      "transit": "00994",
+      "status": "ACTIVE",
+      "displayAttributes": {
+        "quickLinks": "XXXX",
+        "name": "00",
+        "fullName": "XXXXX"
+      },
+      "currency": "CAD",
+      "details": null,
+      "external": false
+    },
+    {
+      "id": "19182838",
+      "number": "6666666",
+      "nickname": "Savings",
+      "capabilities": [
+        "RENAMEABLE",
+        "TRANSFER_FROM_USD",
+        "REORDER_CHEQUE_SOURCE",
+        "FEED_SAVINGS_GOAL",
+        "E_ADV_SAVE",
+        "REPRINT_STATEMENT_CHARGE_SOURCE",
+        "STOP_PAYMENTS",
+        "EMT_TO",
+        "TRANSFER_FROM",
+        "RDC",
+        "PAY_BILL",
+        "PAY_TAX_FROM",
+        "TRANSFER_TO",
+        "DOWNLOAD_TRANSACTIONS",
+        "EMT_STOP",
+        "MONEY_ORDER_SOURCE",
+        "UPDATE_STATEMENT_PREFERENCE",
+        "REPRINT_STATEMENT_MONTHLY",
+        "ALP_FROM_ASR",
+        "EMT_RECLAIM",
+        "DIRECT_DEPOSIT",
+        "VIEW_VOID_CHEQUE",
+        "COPS_ASR",
+        "CONTRIBUTE_TO_RRSP_DISA",
+        "CMP_FROM_ASR",
+        "CONTRIBUTE_TO_TFSA_TASA",
+        "TFSA_TO_ASR",
+        "SHOW_ACCOUNT_DETAILS",
+        "MPP_FROM_ASR",
+        "SAVINGS_GOAL",
+        "AUTO_BILL_PAY",
+        "VIEW_TRANSACTIONS_MONTHLY",
+        "TRANSFER_TO_USD",
+        "EMT_FROM"
+      ],
+      "_type": "InternalAccountV2",
+      "categorization": {
+        "category": "DEPOSIT",
+        "subCategory": "SAVINGS",
+        "extraSubCategory": null,
+        "instance": "XXXXX",
+        "holding": "XXXXX",
+        "taxPlan": "XXXXX",
+        "domicile": "XXXXX"
+      },
+      "availableFunds": 7654.32,
+      "balance": 7654.32,
+      "transit": "00000",
+      "status": "ACTIVE",
+      "displayAttributes": {
+        "quickLinks": "XXX",
+        "name": "00",
+        "fullName": "ABCD"
+      },
+      "currency": "CAD",
+      "details": null,
+      "external": false
+    },
+    {
+      "id": "100000000011",
+      "number": "0123948586",
+      "nickname": "TFSA",
+      "capabilities": [
+        "RENAMEABLE",
+        "SHOW_ACCOUNT_DETAILS",
+        "VIEW_TRANSACTIONS_MONTHLY"
+      ],
+      "_type": "InternalAccountV2",
+      "categorization": {
+        "category": "REGISTERED_INVESTMENT",
+        "subCategory": "MUTUAL_FUND",
+        "extraSubCategory": null,
+        "instance": null,
+        "holding": "TFSAMUF",
+        "taxPlan": "TFSA",
+        "domicile": "DOMESTIC"
+      },
+      "availableFunds": null,
+      "balance": 123456.78,
+      "transit": "00000",
+      "status": "ACTIVE",
+      "displayAttributes": {
+        "quickLinks": "XXXXXXX",
+        "name": "XXXXX",
+        "fullName": ""
+      },
+      "currency": "CAD",
+      "details": null,
+      "external": false
+    },
+    {
+      "id": "12121212121",
+      "number": "23232323232",
+      "nickname": "RRSP",
+      "capabilities": [
+        "RENAMEABLE",
+        "SHOW_ACCOUNT_DETAILS",
+        "VIEW_TRANSACTIONS_MONTHLY"
+      ],
+      "_type": "InternalAccountV2",
+      "categorization": {
+        "category": "REGISTERED_INVESTMENT",
+        "subCategory": "MUTUAL_FUND",
+        "extraSubCategory": null,
+        "instance": null,
+        "holding": "RRSPMUF",
+        "taxPlan": "RRSP",
+        "domicile": "DOMESTIC"
+      },
+      "availableFunds": null,
+      "balance": 43320.11,
+      "transit": "00000",
+      "status": "ACTIVE",
+      "displayAttributes": {
+        "quickLinks": "XXXXX",
+        "name": "XXXXX",
+        "fullName": ""
+      },
+      "currency": "CAD",
+      "details": null,
+      "external": false
+    },
+    {
+      "id": "46252343535",
+      "number": "424242424242424242",
+      "nickname": "Visa",
+      "capabilities": [
+        "RENAMEABLE",
+        "RDC",
+        "FEED_SAVINGS_GOAL",
+        "SHOW_ACCOUNT_DETAILS",
+        "TRANSFER_TO",
+        "DOWNLOAD_TRANSACTIONS",
+        "TRANSFER_FROM"
+      ],
+      "_type": "InternalAccountV2",
+      "categorization": {
+        "category": "CREDIT",
+        "subCategory": "CREDIT_CARD",
+        "extraSubCategory": "VISA",
+        "instance": null,
+        "holding": "VISA",
+        "taxPlan": "NON_REGISTERED",
+        "domicile": "DOMESTIC"
+      },
+      "availableFunds": null,
+      "balance": -1321.53,
+      "transit": "00000",
+      "status": "ACTIVE",
+      "displayAttributes": {
+        "quickLinks": "XXXXXX",
+        "name": "XXXXX",
+        "fullName": "XXXXXX"
+      },
+      "currency": "CAD",
+      "details": {
+        "creditCardStatus": "UNBLOCKED",
+        "cardHolderType": "AUTHORIZED",
+        "blockedDate": null,
+        "accessLevel": "CARD",
+        "lostStolenDate": null,
+        "familyCardEnabled": false,
+        "businessCardHolderRole": null,
+        "spendLimitSet": false,
+        "liabilityType": "PERSONAL"
+      },
+      "external": false
+    }
+  ]
+}

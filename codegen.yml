@@ -1,16 +1,38 @@
-overwrite: true
-schema: schema.json
-documents:
-  - ./src/**/*.{ts,tsx}
-  - ./node_modules/gatsby-*/**/*.js
-config:
-  namingConvention:
-    enumValues: keep
 generates:
-  ./src/graphqlTypes.ts:
+  # ./src/types/graphql.ts:
+  #   schema: schema.json
+  #   overwrite: true
+  #   documents:
+  #     - ./src/**/*.{ts,tsx}
+  #     - ./node_modules/gatsby-*/**/*.js
+  #   pluckConfig:
+  #     modules:
+  #       - name: 'gatsby'
+  #         identifier: 'graphql'
+  #   config:
+  #     namingConvention:
+  #       enumValues: keep
+  #   hooks:
+  #     afterOneFileWrite:
+  #       - prettier --write
+  #   plugins:
+  #     - typescript
+  #     - typescript-operations
+  # TODO figure out how to get the apollo queries
+  ./src/types/apollo-graphql.ts:
+    schema: functions/schema.js
+    overwrite: true
+    documents:
+      - ./src/**/*.{ts,tsx}:
+        noRequire: true
     hooks:
       afterOneFileWrite:
         - prettier --write
     plugins:
       - typescript
       - typescript-operations
+pluckConfig:
+  modules:
+    - name: '@apollo/client'
+      identifier: 'gql'
+  globalGqlIdentifierName: []
