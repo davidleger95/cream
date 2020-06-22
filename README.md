@@ -1,6 +1,6 @@
 # 💰 CREAM (Cash Rules Everything Around Me)
 
-CREAM is a banking app that displays online banking information from CIBC accounts in a beautifyl, user-friendly UI. I sarted this project because I was tired of using CIBC's clunky app.
+CREAM is a banking app that displays online banking information from CIBC accounts in a beautiful, user-friendly UI. I started this project because I was tired of using CIBC's clunky app.
 
 This is very much a work in progress at the moment, but enjoy! :)
 
